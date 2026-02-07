@@ -53,7 +53,9 @@ export const Filters = ({ className }: Props) => {
 			arrayFormat: 'comma'
 		})
 
-		router.push(`?${query}`)
+		router.push(`?${query}`, {
+			scroll: false
+		})
 	}, [filters])
 
 	return (
